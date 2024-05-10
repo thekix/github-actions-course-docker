@@ -1,0 +1,16 @@
+name: "Podcast Generator"
+author: "Rodolfo García"
+description: "Generate the feed for the course"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+branding:
+  icon: "git-branch"
+  color: "red"
+inputs:
+  email:
+    description: "The commiter email address"
+    required: true
+    default: ${{ github.actor }}@localhost
+    required: true
+    default: ${{ github.actor }}
